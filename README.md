@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+# Aplicativo React Pizza
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este é um simples aplicativo React que apresenta um menu de pizzas para uma pizzaria fictícia. Ele exibe várias opções de pizzas junto com seus detalhes e status de disponibilidade. O aplicativo também fornece informações sobre o horário de funcionamento e permite que os usuários façam pedidos durante o horário de operação.
 
-## Available Scripts
+## Tabela de Conteúdo
 
-In the project directory, you can run:
+- [Aplicativo React Pizza](#aplicativo-react-pizza)
+  - [Tabela de Conteúdo](#tabela-de-conteúdo)
+  - [Primeiros Passos](#primeiros-passos)
+  - [Recursos](#recursos)
+  - [Componentes](#componentes)
+  - [Uso](#uso)
+  - [Contribuição](#contribuição)
+  - [Licença](#licença)
 
-### `npm start`
+## Primeiros Passos
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Para executar este aplicativo em sua máquina local, siga estas etapas:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clone o repositório em sua máquina local usando:
 
-### `npm test`
+   ```bash
+   git clone https://github.com/your-username/react-pizza-app.git
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Navegue até o diretório do projeto:
 
-### `npm run build`
+   ```bash
+   cd react-pizza-app
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Instale as dependências necessárias:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   npm install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Inicie o servidor de desenvolvimento:
 
-### `npm run eject`
+   ```bash
+   npm start
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+5. Abra o navegador e visite `http://localhost:3000` para ver o Aplicativo React Pizza em ação.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Recursos
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Exibir uma lista de opções de pizzas disponíveis a partir de um conjunto de dados predefinido.
+- Mostrar detalhes das pizzas, como nome, ingredientes, preço e disponibilidade.
+- Indicar pizzas esgotadas com um indicador visual.
+- Fornecer informações sobre o horário de funcionamento da pizzaria e permitir fazer pedidos durante o horário de operação.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Componentes
 
-## Learn More
+O Aplicativo React Pizza é composto pelos seguintes componentes:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- `App`: O componente principal do aplicativo que serve como contêiner para o cabeçalho, menu e rodapé.
+- `Header`: Exibe o título da pizzaria, "React Pizza".
+- `Menu`: Lista as pizzas disponíveis do conjunto de dados `pizzaData`, juntamente com seus detalhes e status de disponibilidade.
+- `Pizza`: Representa um item individual de pizza com seu nome, ingredientes, preço e um indicador opcional de "esgotado".
+- `Footer`: Exibe o horário de funcionamento da pizzaria e um botão de pedido durante o horário de operação.
+- `Order`: Fornece informações sobre o horário de funcionamento da pizzaria e um botão para fazer um pedido.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Uso
 
-### Code Splitting
+1. Inicie o aplicativo seguindo as instruções em "Primeiros Passos".
+2. Ao carregar, você verá o título da pizzaria no cabeçalho.
+3. A seção do menu exibirá uma lista de pizzas disponíveis com seus detalhes.
+4. Se alguma pizza estiver esgotada, ela será marcada adequadamente.
+5. O rodapé mostrará se a pizzaria está aberta e fornecerá opções de pedido durante o horário de operação.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Contribuição
 
-### Analyzing the Bundle Size
+Contribuições são bem-vindas! Se você encontrar problemas ou tiver sugestões de melhorias, sinta-se à vontade para abrir um problema ou enviar um pull request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Licença
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Este projeto está licenciado sob a [Licença MIT](LICENSE). Você tem a liberdade de usar, modificar e distribuir o código como desejar.
